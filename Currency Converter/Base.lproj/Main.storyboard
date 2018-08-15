@@ -61,6 +61,9 @@
                                                     </constraints>
                                                     <state key="normal" title="Button" image="NotSelectedCheckbox"/>
                                                     <state key="selected" image="SelectedCheckox"/>
+                                                    <connections>
+                                                        <action selector="CheckboxCell1:" destination="sVb-gQ-eO4" eventType="touchUpInside" id="rPF-Ea-0HA"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -73,6 +76,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="f8V-gT-9b6" secondAttribute="bottom" constant="2" id="r20-7g-Bdl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="refbtn_cell1" destination="f8V-gT-9b6" id="S1r-G3-bWY"/>
+                                            <outlet property="reflabel_cell1" destination="OjD-lH-Ta6" id="DgH-tp-k4L"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -107,6 +114,9 @@
                                                     </constraints>
                                                     <state key="normal" title="Button" image="NotSelectedCheckbox"/>
                                                     <state key="selected" backgroundImage="SelectedCheckox"/>
+                                                    <connections>
+                                                        <action selector="CheckboxCell2:" destination="Ufa-qB-9Bk" eventType="touchUpInside" id="If7-xr-dAD"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -119,6 +129,10 @@
                                                 <constraint firstItem="pG0-36-siD" firstAttribute="top" secondItem="vND-Bn-9At" secondAttribute="top" constant="2" id="u7f-W4-Qka"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="refbtn_cell2" destination="pG0-36-siD" id="qvg-aM-GQT"/>
+                                            <outlet property="reflabel_cell2" destination="CrO-3C-mch" id="q2G-LE-meg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -164,6 +178,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="conversionFromTable" destination="nWn-s2-1mZ" id="CdU-e2-n60"/>
+                        <outlet property="conversionToTable" destination="X6P-N4-QTL" id="qsn-E3-TFp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
