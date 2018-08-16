@@ -10,35 +10,70 @@ import UIKit
 
 class NewRateVC: UIViewController{
     
-    var newRateLabel:Double = 0
+    var numberLabel:Double = 0;
+    var userIsInMiddleOfTyping:Bool = false
+    var decimalPlaceWasUsed:Bool = false
+    var selectedCurrency1:String = "", selectedCurrency2:String = "", current_currency_rate:String = "" , amount:String = ""
+    
+    
     @IBOutlet weak var label: UITextField!
     @IBAction func numbers(_ sender: UIButton)
     {
-        label.text = label.text! + String(sender.tag-1)
-        newRateLabel = Double(label.text!)!
+        if(sender.tag != 11 ){
+            label.text = label.text! + String(sender.tag-1)
+            numberLabel = Double(label.text!)!
+        }
+        else if (label.text == "" && sender.tag == 11){
+            if (label.text?.contains("."))! {
+                // "." present
+            } else {
+                // "." Not present
+                label.text = label.text! + "0."
+            }
+        }
+        else{
+            if (label.text?.contains("."))! {
+                // "." present
+            } else {
+                // "." Not present
+                label.text = label.text! + "."
+            }
+            
+        }
     }
     
     @IBAction func clearBtn(_ sender: UIButton) {
-        label.text = " "
+        label.text = ""
     }
-    @IBAction func digitBtn(_ sender: UIButton) {
-       
-    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        /* if segue.destination is TertiaryViewController
-         {
-         let vc = segue.destination as? TertiaryViewController
-         vc?.username = "Arthur Dent"
-         }
-         */
+        current_currency_rate = label.text!
+        
+        if segue.identifier == "DisplayNewConversionSegue" {
+            
+            let displayVC = segue.destination as! DisplayConversionVC
+            displayVC.selectedCurrency1 = selectedCurrency1
+            displayVC.selectedCurrency2 = selectedCurrency2
+            displayVC.current_currency_rate = current_currency_rate
+            displayVC.amount = amount
+ 
+ 
+        }
+        
+        
+        
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print(selectedCurrency1 + " - " + selectedCurrency2 + " - " + current_currency_rate )
         
     }
     

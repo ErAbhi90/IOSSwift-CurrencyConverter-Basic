@@ -10,9 +10,21 @@ import UIKit
 
 class DisplayConversionVC: UIViewController{
     
+     var selectedCurrency1:String = "", selectedCurrency2:String = "", current_currency_rate:String = "" , amount:String = ""
+    
+    @IBOutlet weak var ConvertFrom: UILabel!
+    @IBOutlet weak var ConvertFromValue: UILabel!
+    @IBOutlet weak var ConvertTo: UILabel!
+    @IBOutlet weak var ConvertToValue: UILabel!
+    @IBOutlet weak var CurrencyRate: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        ConvertFrom.text = selectedCurrency1
+        ConvertFromValue.text = amount
+        ConvertTo.text = selectedCurrency2
+        CurrencyRate.text = current_currency_rate
         
     }
     
