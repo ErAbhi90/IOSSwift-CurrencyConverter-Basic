@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38309E8A2124BED3006EFFBC /* RateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38309E892124BED2006EFFBC /* RateVC.swift */; };
+		38309E8C2124BFB8006EFFBC /* NewRateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38309E8B2124BFB8006EFFBC /* NewRateVC.swift */; };
+		38309E8E2124BFDE006EFFBC /* DisplayConversionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38309E8D2124BFDE006EFFBC /* DisplayConversionVC.swift */; };
 		384E6786212338D600BE6418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E6785212338D600BE6418 /* AppDelegate.swift */; };
 		384E6788212338D600BE6418 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E6787212338D600BE6418 /* ViewController.swift */; };
 		384E678B212338D600BE6418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384E6789212338D600BE6418 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38309E892124BED2006EFFBC /* RateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateVC.swift; sourceTree = "<group>"; };
+		38309E8B2124BFB8006EFFBC /* NewRateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRateVC.swift; sourceTree = "<group>"; };
+		38309E8D2124BFDE006EFFBC /* DisplayConversionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayConversionVC.swift; sourceTree = "<group>"; };
 		384E6782212338D600BE6418 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E6785212338D600BE6418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384E6787212338D600BE6418 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				384E678E212338E300BE6418 /* LaunchScreen.storyboard */,
 				384E6791212338E300BE6418 /* Info.plist */,
 				384E67B321233F9B00BE6418 /* TableViewCell.swift */,
+				38309E892124BED2006EFFBC /* RateVC.swift */,
+				38309E8B2124BFB8006EFFBC /* NewRateVC.swift */,
+				38309E8D2124BFDE006EFFBC /* DisplayConversionVC.swift */,
 			);
 			path = "Currency Converter";
 			sourceTree = "<group>";
@@ -262,6 +271,9 @@
 				384E67B421233F9B00BE6418 /* TableViewCell.swift in Sources */,
 				384E6788212338D600BE6418 /* ViewController.swift in Sources */,
 				384E6786212338D600BE6418 /* AppDelegate.swift in Sources */,
+				38309E8E2124BFDE006EFFBC /* DisplayConversionVC.swift in Sources */,
+				38309E8A2124BED3006EFFBC /* RateVC.swift in Sources */,
+				38309E8C2124BFB8006EFFBC /* NewRateVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
