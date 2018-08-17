@@ -18,6 +18,7 @@ class DisplayConversionVC: UIViewController{
     @IBOutlet weak var ConvertToValue: UILabel!
     @IBOutlet weak var CurrencyRate: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +26,9 @@ class DisplayConversionVC: UIViewController{
         ConvertFromValue.text = amount
         ConvertTo.text = selectedCurrency2
         CurrencyRate.text = current_currency_rate
-        
+        let conversionRate = Double(current_currency_rate)
+        let convert_value = Double(amount)! * conversionRate!
+        ConvertToValue.text = String(convert_value)
     }
     
     override func didReceiveMemoryWarning() {

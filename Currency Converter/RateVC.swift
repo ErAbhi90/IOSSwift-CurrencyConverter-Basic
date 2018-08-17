@@ -51,6 +51,18 @@ class RateVC: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         amount = label.text!
+        if ((label.text ?? "").isEmpty) {
+            // create the alert
+            let alert = UIAlertController(title: "Currency Conversion", message: "Please add a value before conversion.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        else{
         
         if segue.identifier == "DisplayConversionSegue" {
             
@@ -71,10 +83,13 @@ class RateVC: UIViewController{
             newRateVC.amount = amount
             
         }
+        }
         
   
         
     }
+    
+ 
     
     
     override func viewDidLoad() {
